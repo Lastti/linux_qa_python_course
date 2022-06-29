@@ -109,6 +109,8 @@ report = f'Отчeт о состоянии системы:\n' \
          f'Больше всего памяти использует: {greedy_memory_process[0:20]}\n' \
          f'Больше всего CPU использует: {greedy_cpu_process[0:20]}\n'
 
+print(report)
+
 file_name = datetime.datetime.now().strftime('%d-%m-%Y-%H:%M')
 with open(f'{file_name}.txt', 'w') as f:
     f.write(report)
